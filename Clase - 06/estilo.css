@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 250px;
+    height: 250px;
+    background-color: cadetblue;
+    border: 1px solid black;
+}
+
+section{
+    display: flex;
+    background-color: blue;
+}
+/* Propiedades para el hijo */
+/* Flex grow: si nuestro padre tiene espacio nosotros podemos repartirnos ese espacio */
+/* Flex basis: se coloca un valor en porcentajes, ocupa todo el espacio que deja el padre */
+/* Flex-shrink: no se suele utilizar, el valor por defecto es 1, se usa para achicar cajas */
+.estatico{
+    flex-grow: 2;
+    flex-basis: 100%;
+    flex-shrink: 1;
+    flex: 2  1 15%; /* grow, shrink,basis */
+}
+.relativo{
+    /* flex-grow: 1; */
+}
+
+
+
+
+
+/* Nav y Header */
+/* 
+header{
+    position: fixed;
+    width: 100%;
+    z-index: -5; */ /* Funciona con el fixed, static, relative */
+/* } */
+
+/* nav {
+    background-color: aquamarine;
+} */
+
+/* Cuando doy un position relative, absolute o fixed te da un z-index:1 */
+
+/* .estatico{
+    position: static; *//* Es una propiedad por defecto */
+/* } */
+/* .relativo{
+    position: relative; */ /* Se le pueden agregar 4 propiedades mas (top,left,bottom,right),  */
+/*     top: 80px;
+    left: 95px;
+    bottom: 0;
+    right: 0; */
+    /* Debemos utilizar alguna de esas propiedades para que tenga sentido el position relative, tambien deja el espacio vacio */
+/* } */
+/* .absoluto{
+    position: absolute; */ /* Tambien debemos agregar alguna de las propiedades (top, left, bottom, right) */
+/*     top: 800px;
+    left: 150px; */
+    /* Rompe el flujo normal, a su vez el absolute deja el espacio */
+/* } */   
+/* .fijo{
+    position: fixed;
+    top: 0;
+    right: 0; */
+    /* Caracteristica  */
+/* } */

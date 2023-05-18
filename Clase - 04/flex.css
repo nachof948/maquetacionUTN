@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* FLEXBOX: es una caja flexible, son conceptos para que nuestro diseño tenga un modelo que se conoce como Layouts */
+.padre{
+    background-color: aquamarine;
+    display: flex;
+    /* flex-direction: column; */
+        /* flex-wrap: wrap; */ /* Valor por defecto es nowrap */
+    /* align-items: flex-start; */ /* Valor por defecto */
+    /* justify-content: flex-start; *//* Valor por defecto */
+    justify-content: space-evenly;
+    width: 900px;
+/*     height: 800px; */
+}
+/* .hijo{
+    width: 150px;
+    height: 150px;
+    background-color: cadetblue;
+    border: 1px solid black;
+} */
+
+/* ============================= */
+section{
+    background-color: blueviolet;
+    display: flex;
+}
+.uno{
+    background-color: brown;
+}
+.dos{
+    background-color: cadetblue;
+}
+
+/* ================================ */
+.trescosas{
+    display: flex;
+    flex-direction: column;
+}
+.trescolumnas{
+    display: flex;
+}

@@ -1,0 +1,33 @@
+body{
+    background-color: #222;
+}
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria li{
+    flex-grow: 1;
+    /* LO */
+    /* HOY SE UTILIZA UNIDADES EN 
+    PORCENTAJE, REM, EM. UNIDADES RELATIVAS (LETRAS, ESPACIOS (PADDING, MARGIN)) */
+    
+    flex-basis: 15rem;
+    min-height: 30vh;
+    max-height: calc(50vh - 0.5rem);
+}
+img{
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+img:hover{
+    opacity: 1;
+}
+/*  FONT-SIZE= REM
+    PADDING Y MARGIN = EM
+    WIDTH o HEIGHT: PORCENTAJES, VW */

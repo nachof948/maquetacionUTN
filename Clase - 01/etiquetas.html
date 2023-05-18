@@ -1,0 +1,127 @@
+<!-- ETIQUETAS EN HTML -->
+
+<!-- Etiquetas de Texto -->
+<p>Hola mundo!</p>
+<h1>Noticias 1</h1> <!-- Titulos -->
+<h2>Noticias 2</h2> <!-- Subtitulos -->
+<h3>Noticias 3</h3>  <!-- Subtitulos -->
+
+<!-- Desde el h4 al h6 no se suele utilizar -->
+<h4>Noticias 4</h4> 
+<h5>Noticias 5</h5>
+<h6>Noticias 6</h6>
+
+
+<i>Hola mundo!</i> <!-- Transforma el contenido en cursiva  -->
+<strong>Hola mundo</strong> <!-- Letra en negrita  Actualizacion 2012-->
+<b>Hola Mundo</b> <!-- Letra en negrita tambien -->
+<em>Hola mundo</em> <!-- Transforma el contenido en cursiva Actualizacion 2012 -->
+<s>Hola mundo</s> <!-- Tacha la palabra -->
+<q>Hola mundo</q> <!-- Agrega comillas a la oracion -->
+<p>En <abbr title="Ciudad Autonoma de Buenos Aires">C.A.B.A</abbr>  hubo un acto. </p> <!-- Se utiliza para hacer referencia a una abreviacion -->
+<mark>Hola mundo</mark> <!-- Resalta el texto -->
+
+<!-- Combinacion de etiquetas -->
+<p>Hola mundo buenos <strong>dias</strong></p>
+
+<!-- Etiquetas de Links -->
+
+<!-- Link para abrir otra pestaña -->
+<a href="https://www.google.com/" target="_blank">Ir a la pagina de Google</a> <!-- href significa que va a dirigirme a una URL -->
+
+
+<!-- Etiqueta de imagen -->
+<img src="Montaña.jpg" alt="Es una foto de una montaña" width="900"> <!-- https://unsplash.com/es
+-->
+
+<!-- Etiquetas para listas -->
+
+<!-- Listas ordenadas -->
+<ol>
+    <li>Zapatos</li>
+    <li>Abrigo</li>
+    <li>Pantalon</li>
+    <li>Cinturon</li>
+</ol>
+
+<!-- Lista desordena -->
+<ul>
+    <li>Zapatos</li>
+    <li>Abrigo</li>
+    <li>Pantalon</li>
+    <li>Cinturon</li>
+</ul>
+
+<!-- Etiqueta de Tablas -->
+<table border="1"> <!-- Esto se debe hacer en CSS "Border" -->
+    <tr> <!-- T "table" R "fila"-->
+        <th>Pais</th><!-- T "table" H "titulo"-->
+        <th>Habitantes</th>
+        <th>Tipo de Moneda</th>
+    </tr> 
+    <tr>
+        <td>Argentina</td><!-- T "table" D "dato"-->
+        <td>40565852</td>
+        <td>Peso Argentino</td>
+    </tr>
+    <tr>
+        <td>Chile</td>
+        <td>35565852</td>
+        <td>Peso Chilenos</td>
+    </tr>
+</table>
+
+<!-- Etiquetas de Multimedia -->
+<!-- Pagina para video e imagenes https://www.pexels.com/es-es/-->
+
+<!-- Autoplay -->
+<video src="Video.mp4" autoplay muted loop width="600"> <!-- React!!! -->
+
+</video>
+<!-- Controls -->
+<video src="Video.mp4" controls muted loop width="600">
+
+</video>
+
+<!-- Etiqueta IFRAME -->
+<!-- Se utiliza para agregar video por ejemplo de You Tube -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0v3BXETuB0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Agregar un mapa de Google -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.529367513358!2d-58.4059338!3d-34.5944921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9a143a15f1%3A0xaffc35dc3edb2e51!2sHospital%20Alem%C3%A1n!5e0!3m2!1ses!2sar!4v1681222193917!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!-- Etiquetas para formularios -->
+<form action="">
+    <label for="">Nombre</label> <!-- Se usa para informarle al usuario de que se trata el campo que va a llenar -->
+    <input type="text" value="Pedro" required maxlength="15" minlength="2"><!-- Campo donde el usuario va a agregar la informacion -->
+    
+    <label for="">Apellido</label>
+    <input type="text" required>
+    
+    <label for="">Password</label>
+    <input type="password" required>
+
+    <label for="">Edad</label>
+    <input type="number" max="10" min="1" required>
+
+    <label for="">Email</label>
+    <input type="email" required>
+    
+    <label for="">Ingrese su mensaje</label>
+    <textarea name="" id="" cols="30" rows="10" required></textarea>
+
+    <input type="submit" value="Enviar datos"> <!-- React!! value -->
+    <!-- <button>Enviar datos</button> -->
+    <!-- Se puede usar input type= submit o button -->
+
+    <label for="">Otros tipos de imput</label>
+    <input type="color"> <!-- Elegir colores -->
+    <input type="date"> <!-- Fechas -->
+    <input type="file" accept="image/*"> <!-- Agregar un archivo y con "accept" determinamos que tipo de archivos -->
+    <input type="file" accept=".pdf"> <!-- Agregar un archivo y con "accept" determinamos que tipo de archivos -->
+    <input type="file" accept="video/*"> <!-- Agregar un archivo y con "accept" determinamos que tipo de archivos -->
+    <input type="file" accept="audio/*"> <!-- Agregar un archivo y con "accept" determinamos que tipo de archivos -->
+    <input type="range"> <!-- Determinar el rango -->
+    <input type="checkbox">
+    <input type="search">
+</form>

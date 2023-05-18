@@ -1,0 +1,137 @@
+/* Primero van las etiquetas con las propiedades base y luego siguen las CLASES */
+
+
+/* SELECTOR UNIVERSAL (Se pone en la segunda linea) */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Colores en CSS */
+/* 
+body{
+        rgb
+        rgba
+        hsl
+}
+*/
+
+body{
+    /* background-color: rgb(red, green, blue); */
+    /* background-color: rgba(red, green, blue, alpha); */
+    /* background-color: hsl(hue, saturation, lightness); */
+}
+
+/* /* MODELO DE CAJA */
+/*p,/* Es una etiqueta en bloque porque ocupa todo el ancho */
+a{ /* Es una etiqueta en linea porque ocupa solo el espacio que necesita */
+    background-color: royalblue;
+    padding: 20px 0 0 20px; /* Relleno */
+    border: 1px solid black;/* Borde de la caja */
+    margin: 10px 0 10px 3px; /* Mueve todo el contenido de la caja */
+} 
+
+
+.otroscolores{
+    background-color: brown;
+}
+#selectorid{ /* NO USARLO */
+    background-color: aquamarine;
+}
+
+/* Etiquetas con propiedades base */
+h1{
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+p{
+    color: black;
+    font-size: 25px;
+}
+img{
+    width: 500px;
+    opacity: 1;
+    /* filter: blur(4px); */ /* Difuminada */
+    /* filter: brightness(0.39); */ /* Brillo (0 hasta 2)*/
+    /* filter: invert(100%); */ /* Modificar los colores de las imagenes */
+    /* filter: sepia(100%); */ /* Color sepia */
+    /* filter: grayscale(90%); */ /* Escala de grises */
+}
+table,th,td{
+    /* border: 2px solid red; */
+    text-align: center; /* Alineacion Horizontal */
+    border-collapse: collapse;
+    margin: 0 0 10px 0;
+}
+table{ /* Tipo en linea */
+    width: 50%; /* El porcentaje del ancho total de la pantalla */
+}
+th,td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid skyblue;
+}
+
+th{
+    height: 70px;
+}
+td{
+    height: 50px;
+    vertical-align: bottom; /* Alineacion Vertical */
+}
+/* FIN DE PROPIEDADES BASES */
+.primerap{
+    background-image: linear-gradient(to bottom right,red,green);/* (Direccion,color,color) */
+    background-image: linear-gradient(90deg,red,green,yellow);
+    background-image: radial-gradient(red, green, yellow);
+    line-height: 45px;
+}
+.noticiaImportante{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Botones */
+.boton{
+    color: white;
+    background-color: #36cbf4;
+    padding: 14px 25px;
+    border-radius: 10px;
+    border: 2px solid #36cbf4;
+    box-shadow: 10px 10px 5px black;/* (Horizontal, Vertical,Difuminado,Color) */
+}
+
+/* EFECTO DE SOMBRA */
+.efectoSombra{
+    text-shadow: 2px 2px 5px red; /* (Horizontal, Vertical,Difuminado,Color) */
+}
+
+/* PSEUDO-CLASES */
+/* Son usadas para definir un estado especial de un elemento */
+
+p:first-child{ /* Primer Hijo */
+    background-color: skyblue;
+}
+p:last-child{
+    background-color: #36cbf4;
+}
+p:nth-child(4){ /* Numero especifico */
+    background-color: #36cbf4;
+}
+p:nth-child(even){ /* Par */
+    background-color: red;
+}
+p:nth-child(odd){ /* Impar */
+    background-color: aquamarine;
+}
+
+p:hover{
+    background-color: antiquewhite;
+}
+
+/* Orden en a estructura CSS */
+/* Etiquetas con propiedades basicas */
+/* Etiquetas con Pseudo-clases */
+/* Clases y Pseudo-clases con Clase */
